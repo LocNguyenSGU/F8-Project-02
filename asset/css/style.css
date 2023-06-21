@@ -23,13 +23,17 @@ body {
 
 .btn {
    height: 50px;
-   background-color: #FFB900;
+   background-color: black;
    border-radius: 26px;
-   padding: 11px 41px;
+   /* padding: 11px 41px; */
    font-weight: 600;
    font-size: 1.6rem;
    text-align: center;
    color: #FFFFFF;
+}
+
+.btn:hover {
+   background-color: #FEA31B;
 }
 
 a {
@@ -39,14 +43,17 @@ a {
 /* ======== Header ========= */
 .header {
    background: #f274745e;
+   position: sticky;
+   z-index: 1;
+   top: 0px;
+   padding-bottom: 20px;
 }
 
 .header .body {
    display: flex;
-   padding-top: 44px;
-   position: sticky;
-   z-index: 1;
-   top: -22px;
+   padding-top: 20px;
+   align-items: center;
+   /* background: #f274745e; */
 }
 
 .nav {
@@ -76,15 +83,20 @@ a {
 }
 
 .header .action .btn {
-   background-color: #171100;
+   padding: 11px 41px;
 }
 
 /* hero */
 .hero {
+   background: #f274745e;
+}
+
+.hero .content {
    display: flex;
-   margin-top: 65px;
+   padding-top: 65px;
    gap: 230px;
    padding-bottom: 65px;
+
 }
 
 .hero .right {
@@ -180,6 +192,7 @@ a {
    position: absolute;
    left: -8px;
 }
+
 .info-left .frame {
    width: 48px;
    height: 48px;
@@ -187,6 +200,7 @@ a {
    margin-bottom: 22px;
    position: relative;
 }
+
 .info-left .frame .icon {
    position: absolute;
    top: 13px;
@@ -198,6 +212,7 @@ a {
    left: 95px;
    top: 18px;
 }
+
 .info-left .column-2 .num {
    font-family: 'Poppins';
    font-style: normal;
@@ -214,4 +229,130 @@ a {
    color: #171100;
    width: 123px;
    margin-bottom: 14px;
+}
+
+/* ======== Course ========= */
+.course {
+   background-color: #fff;
+   padding: 200px 0;
+}
+
+.course-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.course-top .info .title {
+   font-family: 'Sen';
+   font-weight: 700;
+   font-size: 3.8rem;
+   line-height: 1.26;
+   letter-spacing: -0.02em;
+   color: #171100;
+}
+
+.course .info .desc {
+   width: 458px;
+   margin-top: 16px;
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1.8rem;
+   line-height: 1.67;
+   color: #5F5B53;
+}
+
+.course-list {
+   margin-top: 55px;
+   display: flex;
+   gap: 30px;
+}
+
+.course-item {
+   flex: 1;
+   background-color: #fff;
+   border-radius: 12px;
+   padding-bottom: 22px;
+}
+
+.course-item:hover {
+   /* background: #FFFFFF; */
+   box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.3);
+}
+
+.course .head {
+   display: flex;
+   margin-top: 16px;
+   align-items: center;
+}
+
+.course .head .sub-title {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 1.8;
+   line-height: 1.67;
+   color: #171100;
+}
+
+.course-item .info {
+   margin-left: 22px;
+}
+
+.course-item .star {
+   margin-left: 119px;
+}
+
+.course-item span {
+   font-weight: 400;
+   font-size: 1.6rem;
+   color: #FEA31B;
+   margin-left: 6px;
+   /* border-radius: 12px; */
+
+}
+
+.course-item .thumb {
+   width: 370px;
+   height: 278px;
+   object-fit: cover;
+   border-radius: 12px 12px 0px 0px;
+}
+
+.course-item .info .desc {
+   width: 326px;
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1.4rem;
+   line-height: 1.86;
+   color: #5F5B53;
+}
+
+.course-item .foot {
+   display: flex;
+   margin-top: 22px;
+   gap: 141px;
+}
+
+.course-item .foot .price {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 1.8;
+   line-height: 1.67;
+   color: #171100;
+}
+
+.course-item .foot .btn {
+   width: 118px;
+   height: 50px;
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 1.4rem;
+   text-align: center;
+   color: #FFFFFF;
+
 }
