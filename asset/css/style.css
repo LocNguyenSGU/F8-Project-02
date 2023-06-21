@@ -354,5 +354,79 @@ a {
    font-size: 1.4rem;
    text-align: center;
    color: #FFFFFF;
+}
 
+/* ======== Feedback ========= */
+.feedback {
+   background-color: #2E2100;
+   padding-bottom: 96px;
+}
+
+.feedback .fb-item {
+   display: flex;
+   /* gap: 241px; */
+}
+
+.feedback .info-left {
+   width: 160px;
+   margin-top: 96px;
+   
+}
+.feedback .info-left .avatar {
+   width: 72px;
+   height: 72px;
+   border-radius: 50%;
+}
+
+.feedback .info-left .title {
+   font-family: 'Sen';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 2.4rem;
+   line-height: 1.42;
+   color: #F7F7F7;
+   margin-top: 18px;
+   width: 130px;
+}
+
+.feedback .info-left .desc {
+   font-family: 'Poppins';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 1.4rem;
+   line-height: 1.86;
+   color: #BFBCB3;
+   margin-top: 4px;
+   width: 160px;
+}
+
+.feedback .info-left .dots {
+   display: flex;
+   margin-top: 28px;
+   gap: 6px;
+}
+
+.feedback .info-left .dot {
+   width: 6px;
+   height: 6px;
+   background-color: #634700;
+   border-radius: 50%;
+}
+
+.feedback .info-left .dot:nth-child(2) {
+   background-color: #FFB900;
+}
+
+.feedback .info-right {
+   margin-top: 96px;
+   margin-left: 241px;
+}
+
+.feedback .info-right blockquote {
+   font-family: 'Poppins';
+   font-style: italic;
+   font-weight: 400;
+   font-size: 2.6rem;
+   line-height: 1.54;
+   color: #FFFFFF;
 }
